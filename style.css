@@ -1,0 +1,193 @@
+nav{
+    display: flex;
+    justify-content:space-between;
+}
+img{
+    max-width: 100%;
+}
+     
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+ul{
+    display: flex;
+    justify-content:space-between;
+    list-style-type: none;
+    gap: 10px;
+    align-items: center;
+   
+}
+*{
+    margin: 0;
+    padding: 0;
+     font-family: "Open Sans", sans-serif;
+}
+ul li a{
+    text-decoration: none;
+}
+.logo{
+    font-weight: bold;
+    font-size: 30px;
+}
+.logo-s{
+    color: #fd6ea0;
+}
+.Common-button{
+    background-color: #fd6ea0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.outline-button{
+    background-color: white;
+    color: orange;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Hero Section Style */
+.hero-parent{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+.hero-text-h2{
+    font-size: 30px;
+    margin-bottom:8px;
+}
+.hero-button-left{
+    margin-top: 20px;
+}
+/* About Section Style */
+.about-parent{
+    background-color:rgb(230, 218, 202);
+    margin: 70px auto;
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px;
+}
+.about-parent p{
+    margin: 20px 0;
+}
+.about-box-parent{
+    display: flex;
+    justify-content:space-between;
+    gap: 8px;
+}
+.about-box-parent .box{
+    background-color: white;
+    border-radius: 50px;
+    padding: 20px;
+}
+.what-i-do-parent{
+    margin:60px auto;
+    text-align: center;
+    
+}
+.what-i-do-card1{
+    margin-top: 50px;
+}
+.what-i-do-container-parent{
+    display: flex;
+    margin-top:30px;
+    justify-content:space-between;
+    gap: 8px; 
+}
+.what-i-do-container-parent .what-i-do-card1{
+    border: 2px solid orange;
+    text-align: left;
+}
+
+.what-i-do-container-parent .what-i-do-card1 h2{
+    margin: 10px;
+}
+
+.what-i-do-container-parent .what-i-do-card1 p{
+    color: #757575;
+    font-size:15px;
+
+}
+
+/* Amazing Work Section Style */
+
+.my-amzing-parent{
+    text-align: center;
+
+}
+.myamzing{
+    text-align: center;
+    margin-top:auto;
+}
+
+.gallery{
+    margin-top: 150px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 15px;
+    grid-template-areas:
+        "one two three"
+        "four two six"
+        "four five six";
+}
+
+
+.gallery img{
+    height: 100%; 
+    width: 100%;          
+    object-fit: cover;
+}
+.box1{
+    grid-area: one;
+}
+
+.box2{
+    grid-area: two;
+}
+
+.box3{
+    grid-area: three;
+    
+}
+.box4{
+    grid-area: four;
+}
+
+.box5{
+    grid-area: five;
+}
+
+.box6{
+    grid-area: six;   
+}
+footer{
+    text-align: center;
+    margin-top: 30px !important;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+}
+footer form{
+    padding: 20px;
+}
+footer form input,
+footer form textarea{
+    border:none;
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+
+}
